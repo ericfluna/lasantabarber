@@ -30,7 +30,9 @@ export default function Servicios({ darkMode }) {
 
         <div
           className={`${
-            !darkMode ? 'bg-white text-black' : 'bg-color-dark text-white'
+            !darkMode
+              ? 'bg-color-presentacion text-black'
+              : 'bg-color-dark text-white'
           } opacity-80 hover:opacity-100  scale-90 hover:scale-95 shadow-2xl  w-1/3 h-full`}
         >
           <img src="/servicio2.png" />

@@ -1,8 +1,8 @@
 export default function Cortes({ darkMode }) {
   return (
-    <div className={`w-screen h-5/6 -my-10`}>
-      <div className="-rotate-2 w-screen">
-        <div className=" min-w-screen slide-track overflow-hidden -rotate-2">
+    <div className={`w-screen flex h-fit ${darkMode?'bg-color-presentacion-dark':'bg-color-presentacion'} -mt-20 `}>
+      <div className="-rotate-2 w-screen m-20 ">
+        <div className=" min-w-screen slide-track overflow-hidden ">
           <div className="slide">
             <img src="corte1.png" alt="" />
           </div>

@@ -4,16 +4,14 @@ export default function Mapa({ darkMode }) {
   const [mostrarSatelite, setMostrarSatelite] = useState(true)
   return (
     <div
-      className={`flex h-4/6 p-10  ${
-        darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
-      }`}
+      className={`flex h-4/6 p-10  ${darkMode ? 'bg-color-dark' : 'bg-color'}`}
     >
       <div
-        className={`w-1/3 h-full flex  ${
-          darkMode ? 'bg-color-dark' : 'bg-color'
+        className={`w-1/3 h-full flex align-middle justify-center text-center ${
+          darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
         }`}
       >
-        <div>
+        <div className="m-auto space-y-10 flex flex-col align-middle justify-center text-center">
           <h1 className={darkMode ? 'text-white' : 'text-black'}>
             Nuestro Local
           </h1>
@@ -44,7 +42,7 @@ export default function Mapa({ darkMode }) {
           ></iframe>
         ) : (
           <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1688300939657!6m8!1m7!1srWLtILA8gSd78iQCZdqAQw!2m2!1d41.45396865233351!2d2.211267363025249!3f195.30193032338454!4f0!5f0.7820865974627469"
+            src="https://www.google.com/maps/embed?pb=!4v1688320589957!6m8!1m7!1srWLtILA8gSd78iQCZdqAQw!2m2!1d41.45396865233351!2d2.211267363025249!3f213.7715278125251!4f-3.0669315943274427!5f2.4974480820701754"
             style={{ border: 0, width: '100%', height: '100%' }}
             allowfullscreen=""
             loading="lazy"

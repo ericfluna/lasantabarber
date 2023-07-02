@@ -1,6 +1,6 @@
 export default function Presentacion({ darkMode, handleScrollDown }) {
   return (
-    <div className={`flex min-w-screen h-screen ${!darkMode?'bg-color-presentacion':'bg-color-presentacion-dark'}`}>
+    <div id='presentacion' className={`flex min-w-screen h-screen ${!darkMode?'bg-color-presentacion':'bg-color-presentacion-dark'}`}>
       <div
         className={`p-20 flex w-1/2 h-full ${
           darkMode ? 'text-white' : 'text-black'

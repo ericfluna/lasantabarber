@@ -8,13 +8,16 @@ Header.propTypes = {
 export default function Header({ darkMode, setDarkMode }) {
   return (
     <header
-      className={`fixed z-50 top-0 right-0 flex w-screen h-20 px-2 sm:px-10 md:px-13 fast-trans bg-opacity-0 hover:bg-opacity-100 ${
+      className={`fixed z-50 top-0 right-0 flex w-screen h-20 px-2 sm:px-10 md:px-13 fast-trans bg-opacity-0 hover:bg-opacity-100 h ${
         darkMode ? 'bg-black' : 'bg-white'
       }`}
     >
-      <img className="h-20" src="/logo.png" />
+      <img
+        className={`h-20 ${darkMode ? '' : 'bg-zinc-800'}`}
+        src="/logo.png"
+      />
 
-      <div className="ml-auto flex gap-3 sm:gap-12 lg:gap-14 items-center">
+      <div className="ml-auto flex gap-3 sm:gap-12 lg:gap-14 items-center ">
         <img
           onClick={() => {
             setDarkMode(!darkMode)
