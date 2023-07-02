@@ -2,10 +2,12 @@ export default function Servicios({ darkMode }) {
   return (
     <div
       id="servicios"
-      className={`px-20 ${darkMode ? 'bg-color' : 'bg-color-dark'} h-screen`}
+      className={`px-20 ${darkMode ? 'bg-color-dark' : 'bg-color'} h-screen`}
     >
       <h1
-        className={`py-10  font-bold ${darkMode ? 'text-black' : 'text-white'}`}
+        className={`pt-10  font-bold ${
+          !darkMode ? 'text-black' : 'text-white'
+        }`}
       >
         Nuestros Servicios
       </h1>
@@ -13,8 +15,8 @@ export default function Servicios({ darkMode }) {
       <div className="mx-10 gap-20 flex align-middle justify-center min-w-screen">
         <div
           className={`${
-            darkMode ? 'bg-white text-black' : 'bg-color-dark text-white'
-          } opacity-80 hover:opacity-100 hover:scale-105 shadow-2xl  w-1/3`}
+            darkMode ? 'bg-color text-black' : 'bg-color-dark text-white'
+          } opacity-80 hover:opacity-100 scale-90 hover:scale-95 shadow-2xl  w-1/3`}
         >
           <img src="/servicio1.png" />
           <div className="w-full h-80 font-semibold p-10 space-y-10">
@@ -29,7 +31,7 @@ export default function Servicios({ darkMode }) {
         <div
           className={`${
             !darkMode ? 'bg-white text-black' : 'bg-color-dark text-white'
-          } opacity-80 hover:opacity-100  hover:scale-105 shadow-2xl  w-1/3 h-full`}
+          } opacity-80 hover:opacity-100  scale-90 hover:scale-95 shadow-2xl  w-1/3 h-full`}
         >
           <img src="/servicio2.png" />
           <div className="w-full h-80 font-semibold p-10 space-y-10">
@@ -42,8 +44,8 @@ export default function Servicios({ darkMode }) {
         </div>
         <div
           className={`${
-            darkMode ? 'bg-white text-black' : 'bg-color-dark text-white'
-          } opacity-80 hover:opacity-100 hover:scale-105 shadow-2xl w-1/3 h-full`}
+            darkMode ? 'bg-color text-black' : 'bg-color-dark text-white'
+          } opacity-80 hover:opacity-100 scale-90 hover:scale-95 shadow-2xl w-1/3 h-full`}
         >
           <img src="/servicio3.png" />
           <div className="w-full h-80  font-semibold p-10 space-y-10">

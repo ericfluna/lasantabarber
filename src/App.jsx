@@ -3,6 +3,8 @@ import Presentacion from './components/presentacion'
 import Header from './components/header'
 import Servicios from './components/servicios'
 import Cortes from './components/cortes'
+import Mapa from './components/mapa'
+import Reviews from './components/reviews'
 
 function App() {
   const [darkMode, setDarkMode] = useState(
@@ -25,6 +27,8 @@ function App() {
       <Presentacion darkMode={darkMode} handleScrollDown={handleScrollDown} />
       <Servicios id="servicios" darkMode={darkMode} />
       <Cortes darkMode={darkMode} />
+      <Mapa darkMode={darkMode} />
+      <Reviews darkMode={darkMode}/>
     </div>
   )
 }

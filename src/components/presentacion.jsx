@@ -1,6 +1,6 @@
 export default function Presentacion({ darkMode, handleScrollDown }) {
   return (
-    <div className="flex my-20 min-w-screen h-5/6">
+    <div className={`flex min-w-screen h-screen ${!darkMode?'bg-color-presentacion':'bg-color-presentacion-dark'}`}>
       <div
         className={`p-20 flex w-1/2 h-full ${
           darkMode ? 'text-white' : 'text-black'
@@ -30,7 +30,8 @@ export default function Presentacion({ darkMode, handleScrollDown }) {
           className="slow-trans w-5/6 -rotate-6 hover:rotate-12 scale-95 hover:scale-105"
           src="/trimmer.png"
         />
-      </div>
+      </div>  
     </div>
+    
   )
 }
