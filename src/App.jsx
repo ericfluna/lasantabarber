@@ -21,7 +21,6 @@ function App() {
     const serviciosSection = document.getElementById('presentacion')
     serviciosSection.scrollIntoView({ behavior: 'smooth' })
   }
-
   return (
     <div
       className={`w-screen h-screen overflow-x-hidden scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-slate-300 bg-end`}

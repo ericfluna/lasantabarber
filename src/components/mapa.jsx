@@ -36,17 +36,17 @@ export default function Mapa({ darkMode }) {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d747.5817520349074!2d2.211091908696658!3d41.45382233983911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdecb0ce0643%3A0xa23a183b300f8a83!2sLa%20Santa%20Barber!5e0!3m2!1ses!2ses!4v1688298201289!5m2!1ses!2ses"
             style={{ border: 0, width: '100%', height: '100%' }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         ) : (
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1688320589957!6m8!1m7!1srWLtILA8gSd78iQCZdqAQw!2m2!1d41.45396865233351!2d2.211267363025249!3f213.7715278125251!4f-3.0669315943274427!5f2.4974480820701754"
             style={{ border: 0, width: '100%', height: '100%' }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         )}
       </div>
