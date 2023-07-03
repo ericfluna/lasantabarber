@@ -11,8 +11,8 @@ export default function Mapa({ darkMode }) {
           darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
         }`}
       >
-        <div className="m-auto space-y-10 flex flex-col align-middle justify-center text-center">
-          <h1 className={darkMode ? 'text-white' : 'text-black'}>
+        <div className="m-auto space-y-10 flex flex-col align-middle  justify-center text-center">
+          <h1 className={`font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>
             Nuestro Local
           </h1>
           <button

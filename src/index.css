@@ -33,7 +33,7 @@ div {
 }
 
 .bg-color-presentacion {
-  background-color: #e8edf3;
+  background-color: #ffffff;
 }
 
 .bg-color-presentacion-dark {
@@ -41,17 +41,35 @@ div {
 }
 
 .bg-color {
-  background-color: #ffffff;
+  background-color: #e8edf3;
 }
 
 .bg-color-dark {
   background-color: #4e4e4e;
 }
 
-.bg-end {
-  background-image: url('public/bg-barbero.png');
-  background-position: center;
-  background-size: cover;
+@media (max-width: 1024px) {
+  .bg-end {
+    background-image: url('public/bg-barbero.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-color-presentacion-dark-difuminated {
+    background-color: #2b2b2bab;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .bg-end {
+    background-image: url('public/bg-barbero-pc.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-color-presentacion-dark-difuminated {
+    background-color: #2b2b2b;
+  }
+  
 }
 
 .bg-end div {

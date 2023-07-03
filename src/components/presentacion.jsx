@@ -1,26 +1,24 @@
 export default function Presentacion({ darkMode, handleScrollDown }) {
   return (
     <div id="presentacion" className={`flex min-w-screen min-h-screen`}>
-
-
       <div
-        className={`p-12 flex lg:w-1/3 h-screen bg-opacity-80  ${
-          darkMode ? 'text-white bg-black' : 'text-black bg-white'
+        className={`p-12 flex lg:w-2/5 h-screen ${
+          darkMode
+            ? 'text-white bg-color-presentacion-dark-difuminated'
+            : 'text-black bg-color-presentacion'
         } `}
       >
-
-
-        <div className="space-y-10 ">
-          <h1 className="hidden lg:block p-10 rounded-2xl  hover:scale-105 m-auto ">
+        <div className="space-y-5">
+          <h1 className="hidden lg:block p-10 rounded-2xl hover:scale-105 m-auto ">
             En <span>La Santa Barber</span> valoramos la tradición y el trabajo
-            duro, dominando las técnicas clásicas mientras se mantienen
+            duro, dominando las técnicas clásicas mientras nos mantenemos
             actualizados con las últimas tendencias de moda masculina.
           </h1>
 
-          <h2 className="lg:hidden p-10 rounded-2xl  hover:scale-105 bg-opacity-40 m-auto ">
+          <h2 className="lg:hidden p-10 rounded-2xl hover:scale-105 bg-opacity-40 m-auto ">
             En <span className="font-bold">La Santa Barber</span> valoramos la
             tradición y el trabajo duro, dominando las técnicas clásicas
-            mientras se mantienen actualizados con las últimas tendencias de
+            mientras nos mantenemos actualizados con las últimas tendencias de
             moda masculina.
           </h2>
 
@@ -35,18 +33,7 @@ export default function Presentacion({ darkMode, handleScrollDown }) {
             <h2 className="fast-trans">Conocenos</h2>
           </button>
         </div>
-
       </div>
-
-
-      <div className="hidden lg:flex lg:w-2/3 h-screen">
-        <img
-          className="slow-trans m-auto -rotate-6 hover:rotate-12 scale-95 hover:scale-105"
-          src="/trimmer.png"
-        />
-      </div>
-
-
     </div>
   )
 }
