@@ -6,7 +6,7 @@ export default function Cortes({ darkMode }) {
       } -mt-20 `}
     >
       <h1
-        className={`font-semibold   mt-10 -mb-10 ${
+        className={`font-semibold mt-10 -mb-10 ${
           darkMode ? 'text-white' : 'text-black'
         }`}
       >

@@ -6,19 +6,29 @@ export default function Servicios({ darkMode }) {
         darkMode ? 'bg-color-dark' : 'bg-color'
       }`}
     >
-      
       <h1
         className={`font-semibold  mb-10 ${
           darkMode ? 'text-white' : 'text-black'
         }`}
       >
-        Nuestros <span className={`${darkMode?'bg-color-presentacion text-black ':'bg-color-presentacion-dark text-white '}px-2`}>Servicios</span>
+        Nuestros{' '}
+        <span
+          className={`${
+            darkMode
+              ? 'bg-color-presentacion text-black '
+              : 'bg-color-presentacion-dark text-white '
+          }px-2`}
+        >
+          Servicios
+        </span>
       </h1>
 
-
-
-      <div className="flex gap-20 px-60">
-        <div className={`w-1/3 hover:scale-105 shadow-lg `}>
+      <div className="flex flex-col xl:flex-row gap-20 px-10 xl:px-40 2xl:px-60">
+        <div
+          className={`flex flex-col xl:w-1/3 hover:scale-105 shadow-lg ${
+            !darkMode ? 'bg-color-presentacion' : 'bg-color-presentacion-dark'
+          }`}
+        >
           <img src="/servicio1.png" />
           <div
             className={`p-10 space-y-10 ${
@@ -33,12 +43,18 @@ export default function Servicios({ darkMode }) {
           </div>
         </div>
 
-        <div className={`w-1/3 hover:scale-105 shadow-lg `}>
+        <div
+          className={`flex flex-col xl:w-1/3 hover:scale-105 shadow-lg ${
+            darkMode ? 'bg-color-presentacion' : 'bg-color-presentacion-dark'
+          }`}
+        >
           <img src="/servicio2.png" />
 
           <div
-            className={`p-10 space-y-10 ${
-              !darkMode ? 'bg-color-presentacion text-black' : 'bg-color-presentacion-dark text-white'
+            className={`p-10 space-y-10 overflow-hidden ${
+              !darkMode
+                ? 'bg-color-presentacion text-black'
+                : 'bg-color-presentacion-dark text-white'
             }`}
           >
             <h1 className="font-bold">Corte De Cabello</h1>
@@ -49,7 +65,11 @@ export default function Servicios({ darkMode }) {
           </div>
         </div>
 
-        <div className={`w-1/3 hover:scale-105 shadow-lg `}>
+        <div
+          className={`flex flex-col xl:w-1/3 hover:scale-105 shadow-lg ${
+            !darkMode ? 'bg-color-presentacion' : 'bg-color-presentacion-dark'
+          }`}
+        >
           <img src="/servicio3.png" />
 
           <div

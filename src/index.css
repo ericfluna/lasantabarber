@@ -25,7 +25,7 @@ div {
 }
 
 .slow-trans {
-  transition-duration: 3500ms;
+  transition-duration: 1000ms;
 }
 
 .fast-trans {
@@ -54,6 +54,9 @@ div {
     background-position: center;
     background-size: cover;
   }
+  .bg-color-presentacion-difuminated {
+    background-color: #ffffff57;
+  }
   .bg-color-presentacion-dark-difuminated {
     background-color: #2b2b2bab;
   }
@@ -65,6 +68,9 @@ div {
     background-image: url('public/bg-barbero-pc.png');
     background-position: center;
     background-size: cover;
+  }
+  .bg-color-presentacion-difuminated {
+    background-color: #ffffff;
   }
   .bg-color-presentacion-dark-difuminated {
     background-color: #2b2b2b;
