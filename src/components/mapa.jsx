@@ -4,10 +4,12 @@ export default function Mapa({ darkMode }) {
   const [mostrarSatelite, setMostrarSatelite] = useState(true)
   return (
     <div
-      className={`flex flex-col md:flex-row h-3/6 p-4 md:p-10 ${darkMode ? 'bg-color-dark' : 'bg-color'}`}
+      className={`flex flex-col lg:flex-row h-3/6 p-4 lg:p-10 ${
+        darkMode ? 'bg-color-dark' : 'bg-color'
+      }`}
     >
       <div
-        className={`w-full h-1/3  md:h-full  flex align-middle justify-center text-center ${
+        className={`w-full h-1/3 lg:h-full lg:w-1/3 flex align-middle justify-center text-center ${
           darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
         }`}
       >
@@ -20,7 +22,7 @@ export default function Mapa({ darkMode }) {
             Nuestro Local
           </h1>
           <button
-            className={`px-24 md:40 fast-trans shadow-md font-bold h-12 rounded-lgmx-20 hover:border hover:scale-105 ${
+            className={`px-20 lg:40 sm:px-24 lg:px-10 xl:px-20 fast-trans shadow-md font-bold h-12 rounded-lgmx-20 hover:border hover:scale-105 ${
               darkMode
                 ? 'bg-white hover:bg-neutral-800 text-black hover:text-white hover:border-white'
                 : 'bg-neutral-800 hover:bg-white text-white hover:text-black hover:border-black'
@@ -35,8 +37,8 @@ export default function Mapa({ darkMode }) {
           </button>
         </div>
       </div>
-      
-      <div className="w-full h-2/3 md:h-full overflow-hidden">
+
+      <div className="w-full h-2/3 lg:h-full lg:w-2/3 overflow-hidden">
         {mostrarSatelite ? (
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d747.5817520349074!2d2.211091908696658!3d41.45382233983911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bdecb0ce0643%3A0xa23a183b300f8a83!2sLa%20Santa%20Barber!5e0!3m2!1ses!2ses!4v1688298201289!5m2!1ses!2ses"

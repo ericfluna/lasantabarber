@@ -3,7 +3,7 @@ import React from 'react'
 export default function Menu({ darkMode, setDarkMode }) {
   return (
     <div
-      className={`fixed flex-col lg:hidden top-20 right-0 w-fit ${
+      className={`fixed z-50 flex-col lg:hidden top-20 right-0 w-fit ${
         darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
       }`}
     >

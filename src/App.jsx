@@ -58,7 +58,7 @@ function App() {
         }`}
       >
         <img
-          className="w-40 m-auto slow-trans -rotate-180 hover:rotate-180 scale-95 hover:scale-105"
+          className="w-24 py-5 m-auto slow-trans -rotate-180 hover:rotate-180 scale-95 hover:scale-105"
           src="/trimmer.png"
         />
       </div>
