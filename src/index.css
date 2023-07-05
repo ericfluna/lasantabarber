@@ -60,7 +60,6 @@ div {
   .bg-color-presentacion-dark-difuminated {
     background-color: #2b2b2bab;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -75,7 +74,6 @@ div {
   .bg-color-presentacion-dark-difuminated {
     background-color: #2b2b2b;
   }
-  
 }
 
 .bg-end div {
