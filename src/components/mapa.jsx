@@ -4,7 +4,7 @@ export default function Mapa({ darkMode }) {
   const [mostrarSatelite, setMostrarSatelite] = useState(true)
   return (
     <div
-      className={`flex flex-col lg:flex-row h-3/6 p-4 lg:p-10 ${
+      className={`flex flex-col lg:flex-row h-4/6 p-4 lg:p-10 ${
         darkMode ? 'bg-color-dark' : 'bg-color'
       }`}
     >
@@ -22,8 +22,8 @@ export default function Mapa({ darkMode }) {
             Nuestro Local
           </h1>
           <button
-            className={`px-20 lg:40 sm:px-24 lg:px-10 xl:px-20 fast-trans shadow-md font-bold h-12 rounded-lgmx-20 hover:border hover:scale-105 ${
-              darkMode
+            className={`border w-80 fast-trans shadow-md font-bold h-12 rounded-lgmx-20 hover:border hover:scale-105 ${
+              !darkMode
                 ? 'bg-white hover:bg-neutral-800 text-black hover:text-white hover:border-white'
                 : 'bg-neutral-800 hover:bg-white text-white hover:text-black hover:border-black'
             }`}
@@ -35,6 +35,18 @@ export default function Mapa({ darkMode }) {
               ? 'Cambiar a vista de calle'
               : 'Cambiar a vista de satélite'}
           </button>
+
+          <a href="https://booksy.com/es-es/13385_la-santa-barber_barberia_48923_santa-coloma-de-gramenet">
+            <button
+              className={`w-80 border fast-trans shadow-md font-bold h-12 rounded-lgmx-20 hover:border hover:scale-105 ${
+                darkMode
+                  ? 'bg-color-presentacion hover:bg-neutral-800 text-black hover:text-white hover:border-white'
+                  : 'bg-neutral-800 hover:bg-white text-white hover:text-black hover:border-black'
+              }`}
+            >
+              Reserva tu cita
+            </button>
+          </a>
         </div>
       </div>
 
