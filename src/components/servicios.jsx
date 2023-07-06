@@ -67,7 +67,7 @@ export default function Servicios({ darkMode }) {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              600: {
+              650: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
@@ -106,7 +106,7 @@ export default function Servicios({ darkMode }) {
               >
                 <img className="h-2/3" src="/servicio2.png" />
                 <div
-                  className={`h-60 sm:h-96 md:h-80 space-y-5 py-5 ${
+                  className={`h-60 sm:h-96 md:h-80 space-y-5 p-5 ${
                     !darkMode
                       ? 'bg-color-presentacion text-black'
                       : 'bg-color-presentacion-dark text-white'
@@ -127,7 +127,7 @@ export default function Servicios({ darkMode }) {
                 }`}
               >
                 <img className="h-2/3" src="/servicio3.png" />
-                <div className={`h-60 sm:h-96 md:h-80 space-y-5 py-5`}>
+                <div className={`h-60 sm:h-96 md:h-80 space-y-5 p-5`}>
                   <h1 className="font-bold">Depilación Facial</h1>
                   <h2 className="font-semibold">
                     Depilación a cera. Retirada del bello sobrante con posterior
