@@ -1,7 +1,7 @@
 export default function Cortes({ darkMode }) {
   return (
     <div
-      className={`w-screen flex flex-col h-fit ${
+      className={`w-screen flex flex-col h-fit  ${
         darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
       } -mt-20 `}
     >
@@ -12,7 +12,7 @@ export default function Cortes({ darkMode }) {
       >
         Nuestros clientes más <span className={`${darkMode?'bg-color-presentacion text-black ':'bg-color-presentacion-dark text-white '}px-2`}>Estilosos</span>
       </h1>
-      <div className="-rotate-2 w-screen m-20 ">
+      <div className="-rotate-2 w-screen m-20 scale-90 lg:scale-100">
         <div className=" min-w-screen slide-track overflow-hidden ">
           <div className="slide">
             <img src="corte1.png" alt="" />

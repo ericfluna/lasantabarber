@@ -50,7 +50,7 @@ div {
 
 @media (max-width: 1024px) {
   .bg-end {
-    background-image: url('public/bg-barbero.png');
+    background-image: url('/bg-barbero.png');
     background-position: center;
     background-size: cover;
   }
@@ -64,7 +64,7 @@ div {
 
 @media (min-width: 1024px) {
   .bg-end {
-    background-image: url('public/bg-barbero-pc.png');
+    background-image: url('/bg-barbero-pc.png');
     background-position: center;
     background-size: cover;
   }
@@ -130,4 +130,8 @@ h2 {
     -webkit-transform: translateX(calc(-200px * 7));
     transform: translateX(calc(-200px * 7));
   }
+}
+
+SwiperSlide{
+  background-color: aqua;
 }
