@@ -1,18 +1,25 @@
 export default function Cortes({ darkMode }) {
   return (
     <div
-      className={`w-screen flex flex-col h-fit  ${
+      className={`w-screen text-center py-10 lg:h-screen ${
         darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
-      } -mt-20 `}
+      } `}
     >
       <h1
-        className={`font-semibold mt-10 -mb-10 ${
-          darkMode ? 'text-white' : 'text-black'
-        }`}
+        className={`font-semibold  ${darkMode ? 'text-white' : 'text-black'}`}
       >
-        Nuestros clientes más <span className={`${darkMode?'bg-color-presentacion text-black ':'bg-color-presentacion-dark text-white '}px-2`}>Estilosos</span>
+        Nuestros clientes más{' '}
+        <span
+          className={`${
+            darkMode
+              ? 'bg-color-presentacion text-black '
+              : 'bg-color-presentacion-dark text-white '
+          }px-2`}
+        >
+          Estilosos
+        </span>
       </h1>
-      <div className="-rotate-2 w-screen m-20 scale-90 lg:scale-100">
+      <div className="-rotate-2 w-screen scale-50 -my-32 lg:scale-100 lg:my-10">
         <div className=" min-w-screen slide-track overflow-hidden ">
           <div className="slide">
             <img src="corte1.png" alt="" />

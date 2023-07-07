@@ -15,11 +15,11 @@ export default function Header({
     <header
       className={`fixed z-50 top-0 right-0 ${
         darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
-      } flex w-screen h-20 px-10 lg:px-20 2xl:px-40 fast-trans shadow-md `}
+      } flex justify-center align-middle w-screen h-20 px-10 lg:px-20 2xl:px-40 fast-trans shadow-md `}
     >
       <img src={darkMode ? '/logo-dark.png' : '/logo.png'} />
 
-      <div className="ml-auto lg:hidden flex">
+      <div className="ml-auto lg:hidden flex items-center">
         <img
           className={`cursor-pointer h-12 w-14`}
           src={darkMode ? 'menu-dark.png' : '/menu.png'}

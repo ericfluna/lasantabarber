@@ -19,9 +19,6 @@
 
 div {
   transition-duration: 350ms;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .slow-trans {
@@ -92,6 +89,10 @@ h2 {
   font-size: x-large;
 }
 
+h3 {
+  font-size: large;
+
+}
 .slide-track {
   display: flex;
   animation: scroll 30s linear infinite;

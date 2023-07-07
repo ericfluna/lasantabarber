@@ -4,7 +4,8 @@ export default function Mapa({ darkMode }) {
   const [mostrarSatelite, setMostrarSatelite] = useState(true)
   return (
     <div
-      className={`flex flex-col lg:flex-row h-4/6 p-4 lg:p-10 ${
+      className={`flex flex-col lg:flex-row h-4/6 p-4 lg:p-10 -mt-10
+       98 ${
         darkMode ? 'bg-color-dark' : 'bg-color'
       }`}
     >
