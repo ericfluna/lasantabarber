@@ -23,7 +23,7 @@ export default function Servicios({ darkMode }) {
   return (
     <div
       id="servicios"
-      className={`py-5  ${
+      className={`py-5 ${
         darkMode ? 'bg-color-dark' : 'bg-color'
       }`}
     >
@@ -85,7 +85,7 @@ export default function Servicios({ darkMode }) {
                 }`}
               >
                 <img src="/servicio1.png" />
-                <div className={`space-y-5 p-5 pb-10 h-72 sm:h-96 md:h-80 lg:h-72 `}>
+                <div className={`space-y-5 p-5 pb-10 h-96 sm:h-96 md:h-80 lg:h-72 `}>
                   <h1 className="font-bold">Cuidado De La Barba</h1>
                   <h2 className="font-semibold">
                     Usamos la navaja según preferencia del cliente. Toalla
@@ -101,7 +101,7 @@ export default function Servicios({ darkMode }) {
                 }`}
               >
                 <img src="/servicio2.png" />
-                <div className={`space-y-5 p-5 pb-10 h-72 sm:h-96 md:h-80 lg:h-72 `}>
+                <div className={`space-y-5 p-5 pb-10 h-96 sm:h-96 md:h-80 lg:h-72 `}>
                   <h1 className="font-bold">Corte De Cabello</h1>
                   <h2 className="font-semibold">
                     Asesoramiento basado en el estudio de cada cabello, forma
@@ -117,7 +117,7 @@ export default function Servicios({ darkMode }) {
                 }`}
               >
                 <img src="/servicio3.png" />
-                <div className={`space-y-5 p-5 pb-10 h-72 sm:h-96 md:h-80 lg:h-72 `}>
+                <div className={`space-y-5 p-5 pb-10 h-96 sm:h-96 md:h-80 lg:h-72 `}>
                   <h1 className="font-bold">Depilación Facial</h1>
                   <h2 className="font-semibold">
                     Depilación a cera. Retirada del bello sobrante con posterior
