@@ -2,7 +2,7 @@ export default function Presentacion({ darkMode, handleScrollDown }) {
   return (
     <div
       id="presentacion"
-      className={`flex justify-center align-middle min-w-screen min-h-screen`}
+      className={`flex justify-center align-middle w-screen h-screen`}
     >
       <div
         className={`p-12 text-center flex items-center lg:w-2/5 h-screen ${
@@ -59,14 +59,14 @@ export default function Presentacion({ darkMode, handleScrollDown }) {
           </h3>
 
           <button
-            className={`fast-trans shadow-md font-bold h-fit w-80 px-10 py-3 border hover:scale-105 ${
+            className={`fast-trans shadow-md font-bold h-fit w-2/3  py-3 border hover:scale-105 ${
               !darkMode
                 ? 'bg-white border-black hover:bg-neutral-800 text-black hover:text-white hover:border-white'
                 : 'bg-neutral-800 hover:bg-white text-white hover:text-black hover:border-black'
             }`}
             onClick={handleScrollDown}
           >
-            <h2 className="fast-trans">Conocenos</h2>
+            <h2 className="fast-trans m-auto">Conocenos</h2>
           </button>
         </div>
       </div>

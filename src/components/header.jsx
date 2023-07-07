@@ -13,7 +13,7 @@ export default function Header({
 }) {
   return (
     <header
-      className={`fixed z-50 top-0 right-0 ${
+      className={`fixed z-50 top-0 left-0 ${
         darkMode ? 'bg-color-presentacion-dark' : 'bg-color-presentacion'
       } flex justify-center align-middle w-screen h-20 px-10 lg:px-20 2xl:px-40 fast-trans shadow-md `}
     >
