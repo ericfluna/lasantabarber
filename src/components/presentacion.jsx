@@ -66,7 +66,7 @@ export default function Presentacion({ darkMode, handleScrollDown }) {
             }`}
             onClick={handleScrollDown}
           >
-            <h2 className="fast-trans m-auto">Conocenos</h2>
+            <h2 className="fast-trans m-auto">Conócenos</h2>
           </button>
         </div>
       </div>
